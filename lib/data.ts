@@ -17,7 +17,7 @@ export const personalInfo = {
   // Path to your resume in /public/
   resumePath: '/resume.pdf',
   // Path to your photo in /public/images/
-  photoPath: '/images/keshika.jpg',
+  photoPath: '/images/keshika.jpeg',
 };
 
 export const about = {
