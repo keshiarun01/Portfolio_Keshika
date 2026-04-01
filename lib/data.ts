@@ -15,9 +15,9 @@ export const personalInfo = {
   // Replace with your Formspree form ID: https://formspree.io/
   formspreeId: 'xojpwpzy',
   // Path to your resume in /public/
-  resumePath: '/Users/keshikaarunkumar/portfolio/resume.pdf',
+  resumePath: '/Portfolio_Keshika/resume.pdf',
   // Path to your photo in /public/images/
-  photoPath: '/Users/keshikaarunkumar/portfolio/public/images/keshika.jpg',
+  photoPath: '/Portfolio_Keshika/public/images/keshika.jpg',
 };
 
 export const about = {
