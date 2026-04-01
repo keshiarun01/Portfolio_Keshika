@@ -2,6 +2,8 @@
 // PORTFOLIO DATA — edit this file to update all content
 // ============================================================
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const personalInfo = {
   name: 'Keshika Arunkumar',
   title: 'Data Engineer',
@@ -15,9 +17,9 @@ export const personalInfo = {
   // Replace with your Formspree form ID: https://formspree.io/
   formspreeId: 'xojpwpzy',
   // Path to your resume in /public/
-  resumePath: '/resume.pdf',
+  resumePath: '${base}/resume.pdf',
   // Path to your photo in /public/images/
-  photoPath: '/images/keshika.jpg',
+  photoPath: '${base}/images/keshika.jpg',
 };
 
 export const about = {
