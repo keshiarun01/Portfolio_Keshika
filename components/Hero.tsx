@@ -127,7 +127,7 @@ export default function Hero() {
               className="text-warm-600 dark:text-warm-300 text-base leading-relaxed mb-8 max-w-lg"
             >
               I design data architectures that transform raw data into business intelligence.
-              Currently pursuing MS in Data Analytics Engineering at{' '}
+              Graduated with MS in Data Analytics Engineering at{' '}
               <span className="font-semibold text-teal-600 dark:text-teal-400">Northeastern University</span>.
             </motion.p>
 
