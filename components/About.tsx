@@ -132,8 +132,8 @@ export default function About() {
               {[
                 '🎓 MS @ Northeastern (GPA 3.84)',
                 '📍 Boston, MA',
-                '🚀 Sole Data Engineer @ Slay Inc.',
-                '☁️ Azure & AWS Certified Skills',
+                '🚀 Data Engineer @ Uber',
+                '📜 Microsoft Fabric Data Engineer',
               ].map((tag) => (
                 <span
                   key={tag}

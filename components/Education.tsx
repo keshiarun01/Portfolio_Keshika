@@ -2,8 +2,8 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { GraduationCap, MapPin, Calendar, BookOpen } from 'lucide-react';
-import { education } from '@/lib/data';
+import { GraduationCap, MapPin, Calendar, BookOpen, Award } from 'lucide-react';
+import { education, certifications } from '@/lib/data';
 
 export default function Education() {
   const ref = useRef<HTMLElement>(null);
@@ -103,6 +103,41 @@ export default function Education() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Certifications */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4 }}
+            className="font-display font-bold text-xl text-warm-900 dark:text-warm-50 text-center mb-6"
+          >
+            Certifications
+          </motion.h3>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {certifications.map((cert, i) => (
+              <motion.div
+                key={cert.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.5 + i * 0.1 }}
+                className="flex items-center gap-4 bg-warm-50 dark:bg-warm-800 border border-warm-100 dark:border-warm-700 rounded-2xl p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-teal-100 dark:bg-teal-900/40">
+                  <Award size={24} className="text-teal-600 dark:text-teal-400" />
+                </div>
+                <div>
+                  <h4 className="font-display font-semibold text-sm text-warm-900 dark:text-warm-50 leading-snug">
+                    {cert.name}
+                  </h4>
+                  <p className="text-xs text-warm-500 dark:text-warm-400 mt-1">
+                    {cert.issuer} · {cert.year}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
